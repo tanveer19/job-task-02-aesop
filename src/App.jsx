@@ -1,3 +1,5 @@
+import PersonalScents from "./components/PersonalScents";
+
 function App() {
   return (
     <div>
@@ -46,7 +48,25 @@ function App() {
           backgroundImage:
             "url(https://www.aesop.com/u1nb1km7t5q7/51ATQtZl3wy8KBBgt4MACM/1588c8b4d7e2291b47796d3d42884f1f/Aesop_Othertopias_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.jpg)",
         }}
-      ></div>
+      >
+        <div className="flex text-white gap-7 p-14">
+          <div>
+            <h2 className="text-5xl">Aesop</h2>
+          </div>
+          <div>
+            <p className="text-xl">Doorways to the undiscovered</p>
+            <h2 className="text-5xl">
+              Othertopias: a collection <br /> of unorthodox fragrances
+            </h2>
+            <p>
+              Step inside six fragrant worlds that transcend our <br />{" "}
+              immediate perception—vivid and distinctive.
+            </p>
+            <button>Discover the fragrances</button>
+          </div>
+        </div>
+      </div>
+      <PersonalScents></PersonalScents>
     </div>
   );
 }
